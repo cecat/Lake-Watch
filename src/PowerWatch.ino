@@ -66,6 +66,7 @@ void setup() {
     }
 
     fuelPercent = fuel.getSoC();
+    Particle.publish("mqtt_startup", "Attempting to connect to HA", 3600, PRIVATE);
     client.connect(CLIENT_NAME, HA_USR, HA_PWD);
     // check MQTT 
     if (client.isConnected()) {
