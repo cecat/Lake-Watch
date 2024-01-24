@@ -33,7 +33,6 @@ void mqtt_callback(char* topic, byte* payload, unsigned int length) {
  }
 MQTT client(MY_SERVER, 1883, MQTT_KEEPALIVE, mqtt_callback);
 int MQTT_CODE = 0;
-
 Timer checkTimer(FIVE_MIN, checkPower);
 Timer reportTimer(REPORT, reportPower);
 bool  TimeToCheck     = TRUE;
