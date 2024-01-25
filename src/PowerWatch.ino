@@ -5,7 +5,9 @@
       - added MQTT to connect to remote Home Assistant
       - added ds18b20 temperature sensor to monitor crawlspace
     2021-Jan
-      - added connection check to MQTT just to be safe                       
+      - added connection check to MQTT just to be safe  
+    2024-Jan
+      - added QoS and guaranteed delivery (for up to a ~4h net outage)                     
  */
 
 #include <Particle.h>
